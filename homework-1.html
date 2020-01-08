@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MATH 141 Written Homework 1</title>
+
+  <style>
+    body {
+      color:#333;
+      width: 50%;
+      margin: auto;
+      font-size: 1.2em;
+    }
+
+    @media print {
+      body {
+        width: 90%;
+        margin: auto;
+        font-size: 1em;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      body {
+        width: 90%;
+      }
+    }
+
+    .subtitle {
+      margin-top: -10px;
+      position: relative;
+      font-size: 1.3em;
+      font-style: italic;
+    }
+
+    .studentInfo {
+      font-weight:unset;
+      font-size: 1em;
+    }
+
+    .answerContainer {
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid tan;
+      background:rgba(246, 188, 113, 0.253);
+    }
+
+    .answerContainer .standOut {
+      color: tan;
+      font-weight: 900;
+    }
+
+    .instructions {
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid dodgerblue;
+      color: dodgerblue;
+      background: rgba(30, 143, 255, 0.164);
+    }
+
+    ol {
+      counter-reset: list;
+    }
+
+    ol > li {
+      list-style: none;
+      position: relative;
+    }
+
+    ol > li:before {
+      counter-increment: list;
+      content: "(" counter(list, lower-alpha) ") ";
+      position: absolute;
+      left: -1.4em;
+    }
+
+    ol ol > li:before {
+      counter-increment: list;
+      content: counter(list, lower-roman);
+      position: absolute;
+      left: -1.4em;
+    }
+
+    .MathJax {
+      text-align: left !important;
+    }
+
+    .make-equation-larger {
+      font-size: x-large;
+    }
+  </style>
+
+</head>
+<body>
+
+  <hgroup>
+    <h1>MATH 141 Written Homework 1</h1>
+    <h2 class="subtitle">due January 14, 2020</h2>
+    <hr>
+    <h3 class="studentInfo"><strong>Student:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Justin Clark</h3>
+    <h3 class="studentInfo"><strong>Class Section:</strong>&nbsp;&nbsp; 2635.05</h3>
+  </hgroup>
+
+  <div class="answerContainer">
+    Responses in <span class="standOut">tan colored </span>boxes like this one. <strong>Show your work and explain your reasoning!</strong>
+  </div>
+
+  <div class="instructions">
+
+    <p>The assignment has three problems, with each problem worth 10 points.</p>
+
+    <p>For each problem, 4 points will come from the quality and detail of your work and explanation. To receive the full points, you must:</p>
+
+    <ul>
+      <li>Organize your work in a clear way</li>
+      <li>Show all steps that you took in solving the problem</li>
+      <li>
+        Explain your reasoning thoroughly (Imagine that you are trying to explain the problem to 
+        a classmate who ius confused. That is the level of detail that I'm looking for!)
+      </li>
+    </ul>
+
+    <p>The remaining 6 points will come from the mathematical correctness of your answers.</p>
+
+    <p>I encourage you to work together on the homework with your classmates, but please write up your answers individually and in your own words.</p>
+
+  </div>
+
+  <article>
+    <h1>1. Unit Circle</h1>
+    <p>
+      The unit circle is a name for the circle that centered at (0, 0) with a radius of 1. 
+      (This circle is very important in trigonometry, which you will study in MATH 142!)
+    </p>
+    
+    <ol>
+      <li>
+        Write the equation of the unit circle:
+      </li>
+      <div class="answerContainer">
+
+        \[(x-0)^2+(y-0)^2=1\]
+        <iframe src="https://www.desmos.com/calculator/z2imksjy0w?embed" width="250px" height="250px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+      </div>
+      
+      <li>
+        Use the equation to determine whether the following points lie on the unit circle:
+        <ol>
+          <li>
+            \[\left(\frac{3}{5},-\frac{4}{5}\right)\]
+            <div class="answerContainer">
+
+
+              \[d = \sqrt{ (x_2-x_1)^2 + (y_2-y_1)^2 } \]
+
+
+              \[\left(x-\frac{3}{5}\right)^2+\left(y--\frac{4}{5}\right)^2=1\]
+            </div>
+          </li>
+          <li>
+            \[\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\]
+          </li>
+          <li>
+            \[\left(-\frac{1}{3},\frac{2}{3}\right)\]
+          </li>
+          <li>
+            \[\left(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)\]
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <h2>2. Cell Phone Company</h2>
+    <p>
+      A cell phone company charges $50 per month for <strong>to 2GB</strong> of data. If you use <strong>more than</strong> 2GB of
+      data, you will pay an extra $10 for each GB of data used beyond the included 2GB. For example, if
+      you use 6GB of data, you will pay the base rate of $50, plus $40 ($10 for each of the 4 extra GB of
+      data used), for a total of $90.
+    </p>
+    <ol>
+      <li>
+        How much would your monthly bill be if you use 0.5GB of data? What about 1GB of data? What
+        about 2GB of data?
+      </li>
+      <li>
+        Use your answers to (a) to find a function \(f(x)\) that gives the cost of your monthly bill if you use
+        \(x\) GB of data, where \(0\le x \le2\) (in other words, you only use 0 to 2GB of data.)
+      </li>
+      <li> 
+        How much would your monthly bill be if you use 3GB of data? What about 4GB of data? What
+        about 5GB of data?
+      </li>
+      <li>
+        Use your answers to (c) to find a function \(g(x)\) that gives the total cost of your monthly bill if
+        you use \(x\) GB of data, where \(x \le 2\) (in other words, you use more than 2 GB of data.)
+      </li>
+      <li>
+        Combine your answers to (b) and (d) to create a <strong>piecewise</strong> function that gives the monthly cost
+        of using any amount of data.
+      </li>
+    </ol>
+
+    <h2>3. Finding Domain (x values)</h2>
+    <p>
+      Let <span class="make-equation-larger">\( f(x) = \frac{ \sqrt{x-5}}{x^2-3x+2} \)</span>. This problem will walk you through finding the domain of \(f(x)\).
+    </p>
+
+    <ol>
+      <li>
+        Start by looking at the numerator. You cannot take the square root of a negative number, so the
+        radicand must be greater than or equal to zero. Use this idea to determine what the numerator
+        tells you about \(x\) (Leave your answer as an inequality. Don't put it in interval notation just yet!)
+        <div class="answerContainer">
+
+
+          \begin{align}
+
+          f(x) &= \frac{\sqrt{x-5}}{x^2-3x+2} \\\\
+          
+          \sqrt{x-5} \\\\
+
+          x-5 &\ge 0 \\
+
+          +5 &\ge +5 \\
+
+          \hline
+
+          x &\ge 5
+          
+          \end{align} 
+
+
+
+          <!-- \begin{matrix}
+          x_{11} & x_{12} \\
+          x_{21} & x_{22} \\
+          x_{31} & x_{32} \\
+          
+          \end{matrix} -->
+          
+
+        </div>
+      </li>
+      <li>
+        Now look at the denominator. The denominator of fraction cannot equal zero. Use this idea to figure out 
+        what the denominator tells us about \(x\). (Leave your answer in the form \(x \ne \)&nbsp;.... Don't
+        put it in interval notation just yet!)
+      </li>
+      <li>
+        Draw a number line. Using your answers to (a) and (b), shade the regions corresponding to the
+        values \(x\) can be.
+      </li>
+      <li>
+        Now use the number line to put your answer into interval notation.
+      </li>
+    </ol>
+
+  </article>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
