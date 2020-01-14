@@ -127,7 +127,7 @@
 
   <hgroup>
     <h1>MATH 141 Written Homework 1</h1>
-    <h2 class="subtitle"    style="color:red;font-size: 3em;"   >due January 14, 2020   PRINT BEFORE CLASS </h2>
+    <h2 class="subtitle">due January 14, 2020</h2>
     <hr>
     <h3 class="studentInfo"><strong>Student:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Justin Clark</h3>
     <h3 class="studentInfo"><strong>Class Section:</strong>&nbsp;&nbsp; 2635.05</h3>
@@ -435,6 +435,9 @@
         Combine your answers to (b) and (d) to create a <strong>piecewise</strong> function that gives the monthly cost 
         of using any amount of data.
         <div class="answerContainer">
+
+          We can now build a piecewise function \(h(x)\) where use the function \(f(x)\) for
+          data usage of 2GB or less, and use the function \(g(x)\) for data usage going over 2GB:
           \begin{align*}      
             h(x) &\left\{
               \begin{array}{ll}
@@ -459,15 +462,21 @@
         tells you about \(x\) (Leave your answer as an inequality. Don't put it in interval notation just yet!)
         <div class="answerContainer">
 
+          With the function:
+          \[f(x) = \frac{\sqrt{x-5}}{x^2-3x+2} \]
+
+          First let's focus on the numerator:
+          \[\sqrt{x-5} \]
+
+          To figure out the domain for the numerator, we simply need to add 5 to each side:
           \begin{align}
-          f(x) &= \frac{\sqrt{x-5}}{x^2-3x+2} \\\\
-          \sqrt{x-5} \\\\
           x-5 &\ge 0 \\
           +5 &\ge +5 \\
           \hline
           x &\ge 5
           \end{align} 
           
+          And we determine that the value of \(x\) must be greater than or equal to \(5\).
         </div>
       </li>
       <li>
@@ -476,25 +485,33 @@
         put it in interval notation just yet!)
         <div class="answerContainer">
 
+          With the function:
+          \[f(x) = \frac{\sqrt{x-5}}{x^2-3x+2} \]
+
+          We need to focus on the denominator, and we will need to make sure that no \(x\) values
+          will cause the denominator to be \(0\):
           <span class="alignLeft">
-            \[ x^2 - 3x + 2 \neq 1 \]
+            \[ x^2 - 3x + 2 \neq 0 \]
           </span>
+          Factoring the polynomial we get:
           <span class="alignLeft">
-            \[ (x - 1)(x - 2) \neq 1 \]
+            \[ (x - 1)(x - 2) \neq 0 \]
           </span>
           <hr>
+          For the first parentheses we add 1 to both sides and we determine that \(x\) cannot be \(1\):
           <span class="alignLeft">
-            \[ x - 1 \neq 1 \]
+            \[ x - 1 \neq 0 \]
           </span>
           <span class="alignLeft">
             \[ x \neq 1 \]
           </span>
           <hr>
+          For the second parentheses we add 2 to both sides and we determine that \(x\) cannot be \(2\):
           <span class="alignLeft">
-            \[ x - 2 \neq 1 \]
+            \[ x - 2 \neq 0 \]
           </span>
           <span class="alignLeft">
-            \[ x \neq 1 \]
+            \[ x \neq 2 \]
           </span>
 
           <hr>
@@ -527,12 +544,19 @@
             \[ 0 \]
           </span>
 
+          <hr>
+          After checking both \(x\) values, we know that we where correct in that using an \(x\) value of \(1\) or \(2\)
+          would both end up with giving us a zero in the denominator, which would not work.
         </div>
       </li>
       <li>
         Draw a number line. Using your answers to (a) and (b), shade the regions corresponding to the
         values \(x\) can be.
         <div class="answerContainer">
+          Since \(x\) values of \(1\) or \(2\) are both less than \(5\), and we have already 
+          determined that we cannot have any \(x\) values less than \(5\), we only need 
+          to represent the possible values of \(x\) which must be greater than or equal to \(5\)
+          on the number line:
           <div class="closed-circle-point"></div>
           <div class="arrow-point"></div>
           <iframe src="https://www.desmos.com/calculator/njtkncgmmk?embed" width="500px" height="120px" style="border: 1px solid #ccc" frameborder=0></iframe>
@@ -541,7 +565,11 @@
       <li>
         Now use the number line to put your answer into interval notation.
         <div class="answerContainer">
-          \( [5, \infty ) \)
+          Again, since \(x\) values of \(1\) or \(2\) are both less than \(5\), and we have already 
+          determined that we cannot have any \(x\) values less than \(5\), we only need 
+          to represent the possible values of \(x\) which must be greater than or equal to \(5\)
+          in interval notation:
+          \[ [5, \infty ) \]
         </div>
       </li>
     </ol>
